@@ -1,0 +1,72 @@
+<!DOCTYPE>
+<html>
+<head>
+    <link href="css/style_menu.css" rel="stylesheet" type="text/css"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Image Processing</title>
+ <!--   <script type="text/javascript" src="js/ch_foto.js" ></script> -->
+</head>
+
+
+<body>
+<div id="wrapper">
+    <div id="header">
+        <h1>Image Processing </h1>
+    </div>
+    
+	<div id="menu">
+       <ul>
+         <li><a href="../index.html">Home</a></li>
+         <li><a href="ind_1.html">Instruction</a></li>
+         <li><a href="ind_2.html">Types of Filtration</a></li>
+         <li><a href="ind_3.html">New Filtering Method</a></li>
+         <li><a href="ind_4.html">Contacts</a></li>
+         </ul>
+	   
+    </div>
+	<div id="wrapper_menu">
+   <div id="text_menu">   
+     <h3> Classification of types of filtration </h3>
+   </div> 
+   
+   <div id="text_">   
+	 <p> <b> All types of filters can be divided </b> into the following classes:
+frequency, linear, nonlinear, combined. In digital signal processing widely
+linear filtration methods are used. However, linear filtering demonstrates
+good results only in the presence of Gaussian additive noise. In the case of <b> impulse noise </b>
+nonlinear filtering methods, in particular median and rank filtering, work more effectively.
+In the case of combined noise, linear and nonlinear filters are used sequentially,
+or a combination of these filters to enhance their positive properties. </p>
+	 
+	 <p> <b> Gaussian filtering. </b> The simplest idea to remove noise is to average the pixels 
+	 in the surrounding area. The simplest option for filtering is to assign a central one
+pixel of the new value as the arithmetic mean of all its neighbors, the values of which 
+differ from the central value by no more than a certain threshold. </p>
+	 
+	 <p> <b> Median filtering. </b> This is the standard way to reduce impulse noise.
+For each pixel in a certain neighborhood (window) is the median value and is assigned 
+to the pixel that is processed. Determining the median value: If you sort an array of pixels 
+by their value, the median will be the middle element of that array. </p>
+	 
+	 <p> <b> Wiener filtering </b> is filtering by minimizing the standard deviation.
+The method is based on the consideration of images and noise as random processes, and the task is set as follows,
+to find an estimate of the pixel parameters for the filtered image for which the standard deviation would be minimal. </p>
+    </div>
+   
+	<div id = "text _">
+<p> The analysis of classical filtering methods, such as median filter, 
+Gauss filter, Wiener filter, used in well-known modern image processing software packages, 
+often do not have satisfactory efficiency in processing specific types of noise and often lead to partial loss of useful signal. / p>
+	 
+	 <p> Therefore <b> the main task of this work is to develop, program and analyze a new authoring filtering method </b>, 
+	 which improves the results of data recovery compared to existing approaches, creating a <b> online service </b>
+image processing under the influence of pulsed noise of different types. </p>
+   </div> 
+   
+   </div>
+	
+</div>
+	
+</body>
+</html>
+	

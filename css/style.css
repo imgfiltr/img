@@ -1,0 +1,226 @@
+#wrapper{
+background-color:#cccccc; /* Gray */
+outline:0px solid #9BA0FF;
+padding:5px;
+margin:0 auto;
+}
+
+#header{
+background-color:#9182FF;
+padding:5px;
+margin:0 auto;
+outline:0px solid #C32017;
+font: bold 16px Taxoma;
+text-transform: uppercase; 
+text-align: center
+}
+
+#text{
+margin-left: auto;
+margin-right: auto;
+padding:5px;
+height: 40px;
+font: bold 20px Taxoma;
+outline:0px solid #C32017;
+}
+
+#text_1{
+margin-top: 30px;
+margin-left: auto;
+margin-right: auto;
+padding:10px;
+height: 500px;
+font: bold 16px Taxoma;
+outline:0px solid #C32017;
+}
+
+#text_menu{
+margin-top: 5px;
+margin-left: auto;
+margin-right: auto;
+padding:10px;
+font: bold 18px Taxoma;
+outline:0px solid #C32017;
+}
+
+#text_{
+margin-top: 0px;
+margin-left: auto;
+margin-right: auto;
+padding:10px;
+font: 20px Taxoma;
+outline:0px solid #C32017;
+}
+
+#wrapper_menu{ 
+margin-top: 10px;
+margin-left: auto;
+margin-right: auto;
+padding:10px;
+height: 10px;
+outline:1px solid #C32017;
+}
+
+#text_progress{
+margin-left: auto;
+margin-right: auto;
+padding-top:20px;
+padding-left:5px;
+height: 30px;
+font: bold 14px Taxoma;
+outline:0px solid #C32017;
+}
+
+#text_progress_5{
+margin-left: auto;
+margin-right: auto;
+padding-top:2px;
+padding-left:5px;
+height: 10px;
+font: bold 14px Taxoma;
+outline:0px solid #C32017;
+}
+
+#modification {
+padding:30px 0px 0px 5px;
+width:350px;
+}
+
+#bigImg {
+ background: #808080;
+ padding:7px;
+ height: 256px;
+ width:  256px;
+}
+
+#icons {
+ display: inline-block;
+ width:30px;
+ /*   position: absolute;
+    left:250px;
+    top: 200; */
+    list-style-type: none
+}
+#icons li {
+    width: 10px;
+    height:10px;
+    border: 2px solid red;
+    margin-bottom: 10px;
+    cursor: pointer
+}
+
+.bg {
+    background: gray;
+    padding: 7px;
+    display: inline-block;
+    float: left;
+	outline:0px solid #C32017;
+  }
+
+ 
+ #canvas1, #canvas2, #canvas3, #canvas4, #canvas5{
+ /* background: gray; */
+ background-image:url(../image/fon1.jpg);
+ background-repeat:repeat;
+ padding: 0px;
+ width: 256px;
+ height:256px;
+ font: bold 14px Taxoma;
+ outline:0px solid #C32017;
+ } 
+
+ 
+ .clear{
+clear:both; /* Отменяет функцию выравнивания float слева и справа */
+}
+
+ul{
+list-style: none; /*убираем маркеры списка*/
+}
+ #menu {
+  list-style: none; /*убираем маркеры списка*/
+  margin:50px auto; /*убираем отступы*/
+  padding-left: 0; /*убираем отступы*/
+  margin-top:25px; /*делаем отступ сверху*/
+}
+
+a{
+  text-decoration: none; /*убираем подчеркивание текста ссылок*/
+  background:#305280; /*добавляем фон к пункту меню*/
+  color:#fff; /*меняем цвет ссылок*/
+  padding:7px; /*добавляем отступ*/
+  font-family: arial; /*меняем шрифт*/
+  border-radius:6px; /*добавляем скругление*/
+/*  -moz-transition: all 0.3s 0.01s ease;  /*делаем плавный переход*/
+/*  -o-transition: all 0.3s 0.01s ease; */
+/*  -webkit-transition: all 0.3s 0.01s ease; */
+ 
+}
+
+a:hover {
+  background:#1C85BB;/*добавляем эффект при наведении*/
+}
+li {
+  float:left; /*Размещаем список горизонтально для реализации меню*/
+  margin-right:7px; /*Добавляем отступ у пунктов меню*/
+  
+}
+
+#myProgress_1 {
+  margin-left:5px;
+  width: 25%;
+  background-color: #ddd;
+  outline:0px solid #C32017;
+}
+
+#myBar_1  {
+  width: 2%;
+  height: 20px;
+  background-color: #305280;
+}
+#myProgress_2 {
+  margin-left:5px;
+  width: 25%;
+  background-color: #ddd;
+  outline:0px solid #C32017;
+}
+
+#myBar_2  {
+  width: 2%;
+  height: 20px;
+  background-color: #305280;
+}
+#myProgress_3 {
+  margin-left:5px;
+  width: 25%;
+  background-color: #ddd;
+  outline:0px solid #C32017;
+}
+
+#myBar_3  {
+  width: 2%;
+  height: 20px;
+  background-color: #305280;
+}
+#myProgress_5 {
+ margin-top:5px;
+  margin-left:5px;
+  width: 20%;
+  background-color: #ddd;
+  outline:0px solid #C32017;
+}
+
+#myBar_5  {
+  width: 2%;
+  height: 20px;
+  background-color: #305280;
+}
+
+.progress.is-large {
+  
+  margin-left:5px;
+  height: 15px;
+}
+
+
+

@@ -1,0 +1,103 @@
+<!DOCTYPE>
+<html>
+<head>
+    <link href="css/style_menu.css" rel="stylesheet" type="text/css"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Image Processing</title>
+</head>
+
+
+<body>
+<div id="wrapper">
+    <div id="header">
+        <h1>Image Processing </h1>
+    </div>
+    
+	<div id="menu">
+       <ul>
+         <li><a href="../index.html">Home</a></li>
+         <li><a href="ind_1.html">Instruction</a></li>
+         <li><a href="ind_2.html">Types of Filtrationї</a></li>
+         <li><a href="ind_3.html">New Filtering Method</a></li>
+         <li><a href="ind_4.html">Contacts</a></li>
+         </ul>
+    </div>
+	
+<div id="wrapper_menu">
+   
+   <div id="text_menu">
+     <h3>Instructions for using the interactive web image filtering service </h3>
+    </div>
+	
+	<div id="text_">  
+	 <p><b>Web service </b> allows you to work in two modes. <b> The first mode </b> 
+	 allows you to study the quality of filtering by different methods (median filtering, 
+	 filtering by the author's method of least finite differences (MLFD) or modified method - MMLFD) images, 
+	 in which the user can add different types of noise (pulse noise, grayscale noise) and different intensities (noise filling from 0% to 100%).
+     <b> The second mode </b> allows you to filter images of already noisy photos that can be downloaded from external 
+     sources using the "Select File" button at the top of the main page.
+	 </p>
+	 
+	 <p> <b> Developed Web Service Interface </b> allows you to select images from a list or download an arbitrary
+	 image file to perform filtering procedures. To do this, you must: </p> <p> <b> 1. </b> Select a file to processing:
+	 - download from a repository that already has the appropriate files, or use a download from a local disk 
+	 (or local storage, for example for smartphones). </p>
+	 
+	 <p> <b> 2. </b> Go to the "Image noise" field. To work in the first mode, the user can add additive noise of the following types:
+      <b> "Salt" </b> - random emissions of maximum brightness - white dots (choose the percentage of noise - from 0 to 100%);
+      <b> "Pepper" </b> - random emissions of minimum brightness - black dots (choose the percentage of noise - from 0 to 100%);
+      <b> Gray Grades </b> - Random Grayscale Emissions (Choose Noise Fill Percentage - 0 to 100%).
+After setting the values, press the appropriate button.
+</p>
+	
+	<p> <b> 3. </b> Provides the ability to create noise for a color image (<b> Noise </b> option),
+<b> Sepia </b> image style. After such manipulations, a noisy black and white image is formed, which is subject to filtering. </p>
+	
+	<p> <b> 4. </b> Depending on the noise generated or present in the image (when loading a noisy image), go to the field
+Image filtering with noise type <b> "Salt" </b>, "Image filtering with noise type <b>" Pepper "</b>
+or Grayscale noise filtering </b> </p>
+	
+	<p> <b> 5. </b> Upload an image to the appropriate field <b> (click the "Upload" button) </b> or delete it <b> ("Clear" button). </b> </ p>
+	
+	<p> <b> 6. </b> To implement classic median filtering, press the buttons: <b> (Median filter "4")
+	</b> (implemented filter type "Median-4") or <b> (Median filter "8") </b> (filter type "Median-8" is implemented)
+to be able to compare with the results of filtering when using known software applications (for example, <b> Adobe PhotoShop, GIPM </b>). </p>
+	
+	<p> <b> 7. </b> For the implementation of author's filtering by the method of least finite differences (MLFD)
+set the data input field from 1 to 255 (number of iterations over one pixel of the image)
+and press the buttons:
+<b> (MLFD 1) </b> (one-time algorithm of the MLFD method is implemented) or <b> (MLFD 3) </b>
+(the algorithm of the MLFD method is implemented three times). Additionally, the user can install the following
+filtering parameters for MLFD, as the number of neighboring pixels to be processed (filter core).
+    The default number is "8" (recommended), but it is possible to set to "4"
+(For some types of noisy images, it gives better results than for "8"). </p>
+	
+	<p> <b> 8. </b> The filtering result can be observed by the user in the corresponding window on the main 
+	field after the "Progress Bar" appears, as well as the quality of the filtering by the criterion of standard deviation <b> 
+	"SLE" </b> in the <b> Filtering efficiency </b> field
+	 
+	 <p> <b> 9. </b> To implement <b> additive Gaussian noise filtering </b> (an example of such an image is
+download ready-made option on the main menu - the topmost option of the list located on the main page)
+the modified method of MLFD is applied - it is caused when pressing the MLFD button.
+For the algorithm to work on this advanced method, the user must set the following parameters: <br>
+<b> - </b> amplitude values ​​in the range -255 to +255; <br>
+<b> - </b> number of adjacent filter pixels: "4" or "8". "8" is selected by default; <br>
+<b> - </b> depth of filtering - the number of iterations during which they occur
+change the pixel values ​​of the image. Set the multiplier <b> n </b> from 1 to 15, which means <b> n </b> * 10 ^ 6 times); <br>
+<b> - </b> filter character, which can be "+", "-", "+/-" -
+gradient of random pixel value change during filtering. The default is set to "-".
+For example, when filtering noise such as "Granular white noise", it is recommended to reduce the brightness
+white spots, so the gradient will be "-", if there are black spots in the image - choose "+",
+     if there are white and black spots - choose "+/-".	 
+	 
+	
+     </div>	 
+	  
+  </div>
+	
+</div>
+	
+</body>
+	
+</html>
+	
